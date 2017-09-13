@@ -1,0 +1,62 @@
+{
+  "name": "arquitetura-base-grunt-angularjs",
+  "description": "Arquitetura para futuros projetos angularJs",
+  "main": "",
+  "authors": [
+    "Eduardo Mesquita"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/eduardomesquita/arquitetura-base-grunt-angularjs",
+  "dependencies": {
+      "AngularStomp": "*",
+      "angular": "1.0.8",
+      "angular-cookies": "~1.0.7",
+      "angular-resource": "~1.0.7",
+      "angular-sanitize": "~1.0.7",
+      "angular-strap": "~0.7.7",
+      "angular-toggle-switch": "~0.3.2",
+      "angular-translate": "~1.1.1",
+      "angular-translate-loader-static-files": "~0.1.5",
+      "angular-ui-bootstrap": "0.6.0",
+      "angular-ui-router": "0.2.12",
+      "angular-ui-select2": "0.0.2",
+      "bootstrap-datepicker": "~1.2.0",
+      "bootstrap-sass": "~3.0.2",
+      "es5-shim": "~2.0.8",
+      "jquery": "~1.9.1",
+      "jquery-icheck": "*",
+      "jquery-throttle-debounce": "*",
+      "jquery.cookie": "~1.3.1",
+      "json3": "~3.2.4",
+      "jstree": "~3.0.9",
+      "moment": "~2.8.3",
+      "ng-cpf-cnpj": "*",
+      "ng-grid": "2.0.7",
+      "ngUpload": "~0.4.1",
+      "select2": "3.4.3",
+      "siftlogic.angular.treeview": "~0.1.7",
+      "sockjs": "0.3.4",
+      "spin": "~1.1.1",
+      "spin.js": "~1.3.2",
+      "stomp-websocket": "2.3.3",
+      "underscore": "~1.7.0",
+      "angular-ui-mask": "~1.4.5",
+      "angular-base64": "2.0.5",
+      "validate": "^0.11.1"
+    },
+    "devDependencies": {
+      "angular-mocks": "~1.0.7",
+      "angular-scenario": "~1.0.7",
+      "jstree": "3.0.3",
+      "angulartics": "~0.8.7",
+      "angular-ui-router": "~0.2.12"
+    },
+    "resolutions": {
+      "angular": "1.0.8",
+      "angular-input-masks": "~2.0.0",
+      "string-mask": "~0.1.1",
+      "jquery": ">=1.7.1",
+      "bootstrap": ">=2.0.4 <3.0"
+    }
+  }
+  
