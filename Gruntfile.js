@@ -215,6 +215,9 @@ module.exports = function (grunt) {
           }
         }
       },
+      concat: {
+      dist: {}
+     },
       rev: {
         dist: {
           files: {
@@ -259,6 +262,16 @@ module.exports = function (grunt) {
             dest: '<%= yeoman.dist %>/assets/img'
           }]
         }
+      },
+      cssmin: {
+        dist: {
+        files: {
+          '<%= yeoman.dist %>/styles/main.css': [
+            '.tmp/styles/{,*/}*.css',
+            '<%= yeoman.app %>/app  /styles/{,*/}*.css'
+          ]
+        }
+      }
       },
       htmlmin: {
         dist: {
@@ -417,18 +430,18 @@ module.exports = function (grunt) {
     });
   
 
-    grunt.registerTask('test', [
-        'connect:test',
-        'karma:dist'
-    ]);
+    // grunt.registerTask('test', [
+    //     'connect:test',
+    //     'karma:dist'
+    // ]);bowe  
   
-    grunt.registerTask('coverage', [
-        'clean:server',
-        'concurrent:test',
-        'autoprefixer',
-        'connect:test',
-        'karma:coverage'
-    ]);
+    // grunt.registerTask('coverage', [
+    //     'clean:server',
+    //     'concurrent:test',
+    //     'autoprefixer',
+    //     'connect:test',
+    //     'karma:coverage'
+    // ]);
   
     grunt.registerTask('build', [
         'clean:dist',
