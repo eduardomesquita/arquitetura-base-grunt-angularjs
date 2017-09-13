@@ -231,7 +231,7 @@ module.exports = function (grunt) {
         }
       },
       useminPrepare: {
-        html: ['<%= yeoman.app %>/index.html'],
+        html: ['<%= yeoman.app %>/scripts/index.html'],
         options: {
           dest: '<%= yeoman.dist %>'
         }
@@ -268,7 +268,7 @@ module.exports = function (grunt) {
         files: {
           '<%= yeoman.dist %>/styles/main.css': [
             '.tmp/styles/{,*/}*.css',
-            '<%= yeoman.app %>/app  /styles/{,*/}*.css'
+            '<%= yeoman.app %>/scripts  /styles/{,*/}*.css'
           ]
         }
       }
@@ -288,8 +288,7 @@ module.exports = function (grunt) {
           files: [{
             expand: true,
             cwd: '<%= yeoman.app %>',
-            src: ['*.html', 'views/**/*.html'],
-            //src: ['*.html'],
+            src: ['*.html', 'scripts/**/*.html'],
             dest: '<%= yeoman.dist %>'
           }]
         }
@@ -300,13 +299,13 @@ module.exports = function (grunt) {
           files: [{
             expand: true,
             dot: true,
-            cwd: '<%= yeoman.app %>',
+            cwd: '',
             dest: '<%= yeoman.dist %>',
             src: [
-              '*.{ico,png,txt,json}',
+              '<%= yeoman.app %>/*.{ico,png,txt,json}',
               'bower_components/{,*/}*',
-              'assets/img/{,*/}*.{gif,webp}',
-              'assets/font/*',
+              '<%= yeoman.app %>/assets/img/{,*/}*.{gif,webp}',
+              '<%= yeoman.app %>/assets/font/*',
             ]
           }, {
             expand: true,
@@ -356,7 +355,7 @@ module.exports = function (grunt) {
       },
       cdnify: {
         dist: {
-          html: ['<%= yeoman.dist %>/*.html']
+          html: ['<%= yeoman.dist %>/scripts/*.html']
         }
       },
       ngmin: {
@@ -456,7 +455,6 @@ module.exports = function (grunt) {
         'uglify',
         'rev',
         'usemin'
-
     ]);
 
     grunt.registerTask('default', [
